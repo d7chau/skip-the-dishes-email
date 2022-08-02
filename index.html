@@ -36,24 +36,29 @@
             .container{
                 width: 100%;
             }
+            .order-table{
+            }
             .order-number{
                 font-size: 20px !important;
             }
-            .restaurant-address{
-                font-size: 5px !important;
-            }
-            .delivery-wait{
-                font-size: 5px !important;
+            .order-address a{
+                text-decoration: none;
+                color: #000000;
             }
             .order-extra-detail{
                 font-size: 12px !important;
                 margin-left: 25px !important; 
             }
-            .address a{
+            /* .survey-text{
+                padding-left: 50px !important;
+                padding-right: 50px !important;
+            } */
+            .footer-address a{
                 text-decoration: none;
                 color: #5e6b77;
             }
             }
+            
         </style>
     </head>
 
@@ -137,7 +142,7 @@
                                         <tr>
                                             <td style="padding: 0 80px 5px 80px;" colspan="3">
                                                 <p class ="restaurant-address" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; margin:0; 
-                                                 text-align: left;"><b>McDonald's (356 Yonge St.)</b></p>                                              
+                                                 text-align: left;"><span class="order-address"><b>McDonald's (356 Yonge St.)</b></span></p>                                              
                                             </td>
                                         </tr>
                                         <tr>
@@ -146,7 +151,6 @@
                                                  text-align: left;">Placed for Delivery ASAP</p>
                                             </td>
                                         </tr>
-
                                         <tr>
                                             <td width ="10%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; 
                                             margin:0; padding-left: 80px; text-align: left; font-weight: 600;">
@@ -290,8 +294,8 @@
                                                   font-weight: 600;">We want to hear from you!</h3>               
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td style="padding: 0 170px 20px 170px;" align="center">
+                                        <tr>                                         
+                                            <td class="survey-text" style="padding: 0 170px 20px 170px;" align="center">                                               
                                                 <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 15px; margin:0;">
                                                     Complete our survey and tell us about your experience with SkipTheDishes</p>
                                             </td>
@@ -343,7 +347,7 @@
                                                             <tr>
                                                             <td width="450">
                                                             <![endif]-->
-                                                            <table class="left-column" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-left: 55px;">
+                                                            <table class="footer-left" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-left: 55px;">
                                                                 <tr>
                                                                     <td style="padding-bottom: 5px;">
                                                                         <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
@@ -363,18 +367,14 @@
                                                             </td>
                                                             <td width="150">
                                                             <![endif]-->
-                                                            <table class="right-column" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-right: 55px;" role="presentation">
+                                                            <table class="footer-right" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-right: 55px;" role="presentation">
                                                                 <tr>
-                                                                    <td style="padding-left: 100px;">
+                                                                    <td class="footer-right-text" style="padding-left: 100px;">
                                                                         <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
                                                                         font-size: 13px;margin:0; text-align: right; color: #5e6b77;">
                                                                         Our mailing address is: SkipTheDishes
                                                                         </p>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td style="padding-left: 100px;">
-                                                                        <p class ="address" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
+                                                                        <p class ="footer-address" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
                                                                         font-size: 13px;margin:0; text-align: right; color: #5e6b77;">
                                                                         242 Hargrave, Suite 410 Winnipeg, MB R3C 0T8 Canada
                                                                         </p>
