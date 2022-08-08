@@ -17,6 +17,12 @@
         </xml>
         <![endif]-->
 
+        <!--[if gte mso 9]>
+        <style>
+        tr { font-size:1px; line-height:0.7pt; }
+        </style>
+        <![endif]-->
+
         <style>
             /* Fixes addresses turning into links */
             #id1 #id2 a[x-apple-data-detectors]{
@@ -36,8 +42,6 @@
             .container{
                 width: 100%;
             }
-            .order-table{
-            }
             .order-number{
                 font-size: 20px !important;
             }
@@ -45,14 +49,6 @@
                 text-decoration: none;
                 color: #000000;
             }
-            .order-extra-detail{
-                font-size: 12px !important;
-                margin-left: 25px !important; 
-            }
-            /* .survey-text{
-                padding-left: 50px !important;
-                padding-right: 50px !important;
-            } */
             .footer-address a{
                 text-decoration: none;
                 color: #5e6b77;
@@ -94,14 +90,14 @@
                                         <tr>
                                             <td style="padding: 0 120px 20px 120px; background-color: #ffffff;">
                                                 <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 18px; margin:0; 
-                                                 text-align: center;">Your order has been placed with <span style="font-weight:600">McDonald's</span> 
+                                                 text-align: center;">Your order has been placed with <span style="font-weight:600">McDonald's</span>
                                                 for delivery ASAP.
                                                 </p>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding-bottom:40px;">
-                                                <table style="border-radius:2px;" bgcolor="#125fca" width="205" border="0" cellspacing="0" cellpadding="0">
+                                                <table style="border-radius:2px;" bgcolor="#125fca" width="205" border="0" cellspacing="0" cellpadding="0" role="presentation">
                                                     <tr>
                                                       <td align="center" style="color:#ffffff; padding:15px 0px; cursor: pointer;">
                                                         <a href="#" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; color:#ffffff; 
@@ -131,7 +127,7 @@
                             <!--Start Order Row-->
                             <tr>
                                 <td>
-                                    <table class="order-table" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="margin: 0 auto" role="presentation">
+                                    <table class="order-table" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" role="presentation">
                                         <tr>
                                             <td style="padding-top: 40px; padding-bottom: 40px;" align="center" colspan="3">
                                                 <h3 class="order-number" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 18px; 
@@ -142,7 +138,8 @@
                                         <tr>
                                             <td style="padding: 0 80px 5px 80px;" colspan="3">
                                                 <p class ="restaurant-address" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; margin:0; 
-                                                 text-align: left;"><span class="order-address"><b>McDonald's (356 Yonge St.)</b></span></p>                                              
+                                                 text-align: left;"><span class="order-address"><b>McDonald's (356 Yonge St.)</b></span></p>  
+                                                 <!--[if gte mso 12]><br /> <![endif]-->                                            
                                             </td>
                                         </tr>
                                         <tr>
@@ -152,128 +149,146 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; 
+                                            <td class="left-order-column" width ="10%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; 
                                             margin:0; padding-left: 80px; text-align: left; font-weight: 600;">
                                                 <p style="margin:0;">x1</p>
                                             </td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 5px; padding-left: 30px;">
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 5px; padding-left: 30px;">
                                                 <p style="font-size: 14px; margin:0;">10 Chicken McNuggets [490-630 Cals]</p>                                          
                                             </td>
-                                            <td width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left;">
+                                            <td class="right-order-column" width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left;">
                                                 <p style="font-size: 14px; margin:0;">$9.49</p>                                          
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
-                                            margin:0; padding-bottom: 5px; padding-left: 17px; text-align:left;">
-                                                <ul class="order-extra-detail" style="color: #5e6b77; font-size: 12px; margin:0; padding-left: 30px;">
-                                                    <li><p style="margin:0;">Sweet & Sour Sauce [50.0 Cals]</p></li>
-                                                </ul>
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+                                            margin:0; padding-bottom: 5px; padding-left: 17px; text-align:left;">                      
+                                                <table class="bullet-list" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                                                    <tr style="font-size: 12px;">
+                                                        <td class="bullet-point" valign="top" style="color: #5e6b77; padding-left: 14px;">&#8226;</td>
+                                                        <td style="padding-left: 10px;" valign="top" align="left">  
+                                                            <p style="color: #5e6b77; font-size: 12px; margin:0;">
+                                                            Sweet & Sour Sauce [50.0 Cals]</p>                                                          
+                                                        </td>                              
+                                                    </tr>                                                                                             
+                                                </table>                                                 
                                             </td>
-                                            <td width ="22%"></td>
+                                            <td class="right-order-column" width ="22%"></td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
-                                            margin:0; padding-bottom: 20px; padding-left: 17px; text-align:left;">
-                                                <ul class="order-extra-detail" style="color: #5e6b77; font-size: 12px; margin:0; padding-left: 30px;">
-                                                    <li><p style="margin:0;">Spicy Habanero Sauce [110.0 Cals]</p></li>
-                                                </ul>
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+                                            margin:0; padding-bottom: 20px; padding-left: 17px; text-align:left;">                                          
+                                                <table class="bullet-list" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                                                    <tr style="font-size: 12px;">
+                                                        <td class="bullet-point" valign="top" style="color: #5e6b77; padding-left: 14px;">&#8226;</td>
+                                                        <td style="padding-left: 10px;" valign="top" align="left">  
+                                                            <p style="color: #5e6b77; font-size: 12px; margin:0;">
+                                                            Spicy Habanero Sauce [110.0 Cals]</p>                                                          
+                                                        </td>                              
+                                                    </tr>                                                                                             
+                                                </table>
                                             </td>
-                                            <td width ="22%"></td>
+                                            <td class="right-order-column" width ="22%"></td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; 
+                                            <td class="left-order-column" width ="10%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; 
                                             margin:0; padding-left: 80px; text-align: left; font-weight: 600;">
                                                 <p style="margin:0;">x1</p>
                                             </td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 5px; padding-left: 30px;">
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 5px; padding-left: 30px;">
                                                 <p style="font-size: 14px; margin:0;">World Famous Fries [240 Cals]</p>                                          
                                             </td>
-                                            <td width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left;">
+                                            <td class="right-order-column" width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left;">
                                                 <p style="font-size: 14px; margin:0;">$4.39</p>                                          
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
-                                            margin:0; padding-bottom: 10px; padding-left: 17px; text-align:left;">
-                                                <ul class="order-extra-detail" style="color: #5e6b77; font-size: 12px; margin:0; padding-left: 30px;">
-                                                    <li><p style="margin:0;">Large [560.0 Cals]</p></li>
-                                                </ul>
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif;
+                                            margin:0; padding-bottom: 20px; padding-left: 17px; text-align:left;">
+                                                <table class="bullet-list" cellpadding="0" cellspacing="0" border="0" role="presentation"> 
+                                                    <tr style="font-size: 12px;">
+                                                        <td class="bullet-point" valign="top" style="color: #5e6b77; padding-left: 14px;">&#8226;</td>
+                                                        <td style="padding-left: 10px;" valign="top" align="left">  
+                                                            <p style="color: #5e6b77; font-size: 12px; margin:0;">
+                                                            Large [560.0 Cals]</p>                                                          
+                                                        </td>                              
+                                                    </tr>                                                                                             
+                                                </table>
                                             </td>
-                                            <td width ="22%"></td>
+                                            <td class="right-order-column" width ="22%"></td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
                                                 <p style="font-size: 14px; margin:0;">Food/Beverage Total</p>                                          
                                             </td>
-                                            <td width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
+                                            <td class="right-order-column" width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
                                                 <p style="font-size: 14px; margin:0;">$13.88</p>                                          
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
                                                 <p style="font-size: 14px; margin:0;">Delivery Fee</p>                                          
                                             </td>
-                                            <td width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
+                                            <td class="right-order-column" width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
                                                 <p style="font-size: 14px; margin:0;">$1.99</p>                                          
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
                                                 <p style="font-size: 14px; margin:0;">HST</p>                                          
                                             </td>
-                                            <td width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
+                                            <td class="right-order-column" width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
                                                 <p style="font-size: 14px; margin:0;">$2.06</p>                                          
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
                                                 <p style="font-size: 14px; margin:0;">Service Fee</p>                                          
                                             </td>
-                                            <td width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
+                                            <td class="right-order-column" width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
                                                 <p style="font-size: 14px; margin:0;">$0.99</p>                                          
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
                                                 <p style="font-size: 14px; margin:0;">Service Fee Tax - HST</p>                                          
                                             </td>
-                                            <td width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
+                                            <td class="right-order-column" width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
                                                 <p style="font-size: 14px; margin:0;">$0.13</p>                                          
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px; padding-left: 30px;">
                                                 <p style="font-size: 14px; margin:0;">Tip the Food Courier</p>                                          
                                             </td>
-                                            <td width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
+                                            <td class="right-order-column" width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 7px;">
                                                 <p style="font-size: 14px; margin:0;">$2.00</p>                                          
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 20px; padding-left: 30px;">
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 20px; padding-left: 30px;">
                                                 <p style="font-size: 14px; margin:0;">Total (CAD)</p>                                          
                                             </td>
-                                            <td width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left;">
+                                            <td class="right-order-column" width ="22%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left;">
                                                 <p style="font-size: 14px; margin:0;">$21.05</p>                                          
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td width ="10%"></td>
-                                            <td width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 40px; padding-left: 30px;">
-                                                <p style="font-size: 14px; margin:0;">Paid with <span style="font-weight:600;">Credit Card.</span></p>                                          
+                                            <td class="left-order-column" width ="10%"></td>
+                                            <td class="middle-order-column" width ="68%" valign="top" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; text-align: left; padding-bottom: 40px; padding-left: 30px;">
+                                                <p style="font-size: 14px; margin:0;">Paid with <b>Credit Card.</b></p>
                                             </td>
-                                            <td width ="22%"></td>                                                                      
+                                            <td class="right-order-column" width ="22%"></td>                                                                      
                                         </tr>
                                     </table>                             
                                 </td>
@@ -302,14 +317,15 @@
                                         </tr>
                                         <tr>
                                             <td align="center" style="padding-bottom:30px;">
-                                                <table style="border:1px solid #e2e6e9; border-radius:2px;" bgcolor="#ffffff" width="205" border="0" cellspacing="0" cellpadding="0">
-                                                    <tr>
-                                                      <td align="center" style="color:#ffffff; padding:15px 0px; cursor: pointer;">
-                                                        <a href="#" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; color:#000000; 
-                                                        text-decoration: none; font-size: 15px; text-transform: uppercase; font-weight:600;">TAKE THE SURVEY</a>
-                                                      </td>
-                                                    </tr>
-                                                </table>   
+                                                <div>
+                                                    <!--[if mso]>
+                                                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="" style="height:48px;v-text-anchor:middle;width:205px;" arcsize="5%" strokecolor="#e2e6e9" fillcolor="#ffffff">
+                                                      <w:anchorlock/>
+                                                      <center style="color:#000000;font-family:sans-serif;font-size:13px;font-weight:bold;">TAKE THE SURVEY</center>
+                                                    </v:roundrect>
+                                                  <![endif]-->
+                                                  <a href="#" style="background-color:#ffffff;border:1px solid #e2e6e9;border-radius:2px;color:#000000;display:inline-block;font-family:sans-serif;font-size:13px;font-weight:bold;line-height:48px;text-align:center;text-decoration:none;width:205px;-webkit-text-size-adjust:none;mso-hide:all;">TAKE THE SURVEY</a>
+                                                </div>
                                             </td>
                                         </tr>   
                                     </table>
@@ -347,7 +363,7 @@
                                                             <tr>
                                                             <td width="450">
                                                             <![endif]-->
-                                                            <table class="footer-left" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-left: 55px;">
+                                                            <table class="footer-left" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-left: 55px;" role="presentation">
                                                                 <tr>
                                                                     <td style="padding-bottom: 5px;">
                                                                         <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
@@ -367,13 +383,17 @@
                                                             </td>
                                                             <td width="150">
                                                             <![endif]-->
-                                                            <table class="footer-right" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-right: 55px;" role="presentation">
+                                                            <table class="footer-right" width="50%" cellspacing="0" cellpadding="0" border="0" align="right" style="padding-right: 55px;" role="presentation">
                                                                 <tr>
                                                                     <td class="footer-right-text" style="padding-left: 100px;">
                                                                         <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
                                                                         font-size: 13px;margin:0; text-align: right; color: #5e6b77;">
                                                                         Our mailing address is: SkipTheDishes
                                                                         </p>
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="footer-right-text" style="padding-left: 100px;">
                                                                         <p class ="footer-address" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
                                                                         font-size: 13px;margin:0; text-align: right; color: #5e6b77;">
                                                                         242 Hargrave, Suite 410 Winnipeg, MB R3C 0T8 Canada
