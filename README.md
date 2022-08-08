@@ -1,6 +1,6 @@
 # Introduction to Transactional Email
 
-[![](https://github.com/d7chau/transactional-email/blob/main/img/skip-thumbnail.png](https://d7chau.github.io/transactional-email/)
+[![](https://github.com/d7chau/transactional-email/blob/main/img/skip-thumbnail.png)](https://d7chau.github.io/transactional-email/)
 
 ## Description
 
