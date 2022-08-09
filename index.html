@@ -32,29 +32,45 @@
 
             /* (if smaller than 600px then run code)*/
             @media only screen and (max-width:600px){
-            .container{
-                width: 400px;
-            }
+                .container{
+                    width: 480px;
+                }
+                .survey-img{
+                    width: 100%;
+                    height: auto;
+                }
+                .footer-right-text{
+                    padding-left: 20px !important;
+                }
+                .footer-right{
+                    padding-right: 55px !important;
+                }
             }
 
             /* Mobile (if smaller than 400px then run code)*/
-            @media only screen and (max-width:400px){
-            .container{
-                width: 100%;
+            @media only screen and (max-width:480px){
+                .container{
+                    width: 100%;
+                }
+                .order-number{
+                    font-size: 20px !important;
+                }
+                .order-address a{
+                    text-decoration: none;
+                    color: #000000;
+                }
+                .footer-address a{
+                    text-decoration: none;
+                    color: #5e6b77;
+                }
+                .footer-right-text{
+                    padding-left: 10px !important;
+                    font-size: 12px;
+                }
+                .footer-right{
+                    padding-right: 55px !important;
+                }
             }
-            .order-number{
-                font-size: 20px !important;
-            }
-            .order-address a{
-                text-decoration: none;
-                color: #000000;
-            }
-            .footer-address a{
-                text-decoration: none;
-                color: #5e6b77;
-            }
-            }
-            
         </style>
     </head>
 
@@ -300,7 +316,7 @@
                                     <table class="survey-table" cellspacing="0" cellpadding="0" border="0" width="100%" align="center" role="presentation">
                                         <tr>
                                             <td>
-                                                <img src="https://i.imgur.com/l88cNAT.jpg" width="600" style="display: block; border: none;" alt="Picture of a Paper Inside Envelope">
+                                                <img class="survey-img" src="https://i.imgur.com/l88cNAT.jpg" width="600" style="display: block; border: none;" alt="Picture of a Paper Inside Envelope">
                                             </td>
                                         </tr>
                                         <tr>
@@ -383,23 +399,27 @@
                                                             </td>
                                                             <td width="150">
                                                             <![endif]-->
-                                                            <table class="footer-right" width="50%" cellspacing="0" cellpadding="0" border="0" align="right" style="padding-right: 55px;" role="presentation">
+                                                            <table class="footer-right" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-right: 55px;" role="presentation">
                                                                 <tr>
                                                                     <td class="footer-right-text" style="padding-left: 100px;">
                                                                         <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
                                                                         font-size: 13px;margin:0; text-align: right; color: #5e6b77;">
                                                                         Our mailing address is: SkipTheDishes
-                                                                        </p>
+                                                                        </p>      
+                                                                        <p class ="footer-address" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
+                                                                        font-size: 13px;margin:0; text-align: right; color: #5e6b77;">
+                                                                        242 Hargrave, Suite 410 Winnipeg, MB R3C 0T8 Canada
+                                                                        </p>                                                                 
                                                                     </td>
                                                                 </tr>
-                                                                <tr>
+                                                                <!-- <tr>
                                                                     <td class="footer-right-text" style="padding-left: 100px;">
                                                                         <p class ="footer-address" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
                                                                         font-size: 13px;margin:0; text-align: right; color: #5e6b77;">
                                                                         242 Hargrave, Suite 410 Winnipeg, MB R3C 0T8 Canada
                                                                         </p>
                                                                     </td>
-                                                                </tr>
+                                                                </tr> -->
                                                             </table>
                                                             <!--[if (gte mso 9)|(IE)]>
                                                             </td>
