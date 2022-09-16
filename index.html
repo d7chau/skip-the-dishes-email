@@ -2,11 +2,10 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="x-apple-disable-message-reformatting"/>
         <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <meta name="HandheldFriendly" content="true">
         <link rel="icon" type="image/x-icon" href="img/skip-favicon.ico">
         <title>Skip The Dishes</title>
 
@@ -37,46 +36,99 @@
                 .container{
                     width: 480px;
                 }
+                .delivery-status{
+                    padding-left: 100px !important;
+                    padding-right: 100px !important;
+                } 
+                .restaurant-address{
+                    padding-left: 50px !important;
+                }
+                .delivery-wait{
+                    padding-left: 50px !important;
+                }
+                .left-order-column{
+                    padding-left: 50px !important;
+                }
+                .right-order-column{
+                    padding-left: 20px;
+                    padding-right: 50px !important;
+                }
                 .survey-img{
                     width: 100%;
                     height: auto;
                 }
-                .footer-right-text{
-                    padding-left: 20px !important;
+                .survey-text{
+                    padding-left: 100px !important;
+                    padding-right: 100px !important;
+                }
+                .footer-left-text{
+                    padding-right: 20px !important;
                 }
                 .footer-right{
                     padding-right: 55px !important;
+                }
+                .footer-right-text{
+                    padding-left: 20px !important;
                 }
             }
 
             /* Mobile (if smaller than 480px then run code)*/
             @media only screen and (max-width:480px){
                 .container{
-                    width: 100%;
+                    width: 100% !important;
                 }
-                .order-number{
-                    font-size: 20px !important;
+                .delivery-status{
+                    padding-left: 80px !important;
+                    padding-right: 80px !important;
+                }
+                .restaurant-address{
+                    padding-left: 35px !important;
+                }
+                .delivery-wait{
+                    padding-left: 35px !important;
+                }
+                .left-order-column{
+                    padding-left: 35px !important;
+                }
+                .middle-order-column{
+                    padding-left: 20px !important;
+                }
+                .right-order-column{
+                    padding-left: 20px !important;
+                    padding-right: 35px !important;
+                }
+                .order-placed{
+                    font-size: 45px !important;
                 }
                 .order-address a{
                     text-decoration: none;
                     color: #000000;
                 }
+                .survey-text{
+                    padding-left: 80px !important;
+                    padding-right: 80px !important;
+                }
                 .footer-address a{
                     text-decoration: none;
                     color: #5e6b77;
                 }
-                .footer-right-text{
-                    padding-left: 10px !important;
-                    font-size: 12px;
+                .footer-left{
+                    padding-left: 40px !important;
+                }
+                .footer-left-text{
+                    padding-right: 15px !important;
                 }
                 .footer-right{
-                    padding-right: 55px !important;
+                    padding-right: 40px !important;
+                }
+                .footer-right-text{
+                    padding-left: 15px !important;
                 }
             }
         </style>
     </head>
 
-<body id="id1" style="background-color: #e4e5ea; margin:0;">
+<body id="id1" style="background-color: #e4e5ea; margin:0; min-width:100%;">
     <!--Start HTML Email-->
     <table id="id2" width="100%" cellspacing="0" cellpadding="0" border="0" border-spacing ="0" style="background-color: #e4e5ea;" role="presentation">
         <tr>
@@ -100,13 +152,13 @@
                                     <table class="subheader-table" cellspacing="0" cellpadding="0" border="0" align="center" role="presentation">
                                         <tr>
                                             <td style="padding-top: 40px; padding-bottom: 20px; background-color: #ffffff;">
-                                                <h1 style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 55px; font-weight: 300; text-align: 
+                                                <h1 class="order-placed" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 55px; font-weight: 300; text-align: 
                                                 center; line-height:50px; margin: 0;">Order Placed
                                                 </h1>                                              
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding: 0 120px 20px 120px; background-color: #ffffff;">
+                                            <td class="delivery-status" style="padding: 0 120px 20px 120px; background-color: #ffffff;">
                                                 <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 18px; margin:0; 
                                                  text-align: center;">Your order has been placed with <span style="font-weight:600">McDonald's</span>
                                                 for delivery ASAP.
@@ -154,15 +206,15 @@
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding: 0 80px 5px 80px;" colspan="3">
-                                                <p class ="restaurant-address" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; margin:0; 
+                                            <td class ="restaurant-address" style="padding: 0 80px 5px 80px;" colspan="3">
+                                                <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; margin:0; 
                                                  text-align: left;"><span class="order-address"><b>McDonald's (356 Yonge St.)</b></span></p>  
                                                  <!--[if gte mso 12]><br /> <![endif]-->                                            
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td style="padding: 0 80px 20px 80px;" colspan="3">
-                                                <p class="delivery-wait" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; margin:0; 
+                                            <td class="delivery-wait" style="padding: 0 80px 20px 80px;" colspan="3">
+                                                <p  style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; margin:0; 
                                                  text-align: left;">Placed for Delivery ASAP</p>
                                             </td>
                                         </tr>
@@ -383,7 +435,7 @@
                                                             <![endif]-->
                                                             <table class="footer-left" width="50%" cellspacing="0" cellpadding="0" border="0" align="left" style="padding-left: 55px;" role="presentation">
                                                                 <tr>
-                                                                    <td style="padding-bottom: 5px;">
+                                                                    <td class="footer-left-text" style="padding-bottom: 5px;">
                                                                         <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
                                                                         font-size: 13px;margin:0; text-align: left; color: #5e6b77;">
                                                                         Copyright © 2022 SkipTheDishes, All rights reserved.</p>                                                              
@@ -391,7 +443,7 @@
                                                                 </tr>
                                                                 <tr>
                                                                     <td>
-                                                                        <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
+                                                                        <p class="footer-left-text" style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; 
                                                                         font-size: 13px;margin:0; text-align: left; color: #5e6b77;">
                                                                         You are receiving this email because you're a current account holder with SkipTheDishes.</p>
                                                                     </td>
