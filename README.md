@@ -1,4 +1,4 @@
-# Introduction to Transactional Email
+# Introduction to Skip The Dishes Email
 
 [![](https://github.com/d7chau/transactional-email/blob/main/img/skip-thumbnail.png)](https://d7chau.github.io/skip-the-dishes-email/)
 
