@@ -1,6 +1,6 @@
 # Introduction to Transactional Email
 
-[![](https://github.com/d7chau/transactional-email/blob/main/img/skip-thumbnail.png)](https://d7chau.github.io/transactional-email/)
+[![](https://github.com/d7chau/transactional-email/blob/main/img/skip-thumbnail.png)](https://d7chau.github.io/skip-the-dishes-email/)
 
 ## Description
 
@@ -17,7 +17,7 @@ Email was tested using Litmus in all major email clients including:
 
 ## Live Demo
 
-https://d7chau.github.io/transactional-email/
+https://d7chau.github.io/skip-the-dishes-email/
 
 ## Authors
 
