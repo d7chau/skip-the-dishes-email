@@ -133,7 +133,7 @@
     </head>
 
 <body id="id1" style="background-color: #e4e5ea; margin:0; min-width:100%;">
-    <!--Start HTML Email-->
+    <!--Start HTML Email (Table Based) -->
     <table id="id2" width="100%" cellspacing="0" cellpadding="0" border="0" border-spacing ="0" style="background-color: #e4e5ea;" role="presentation">
         <tr>
             <td>
@@ -144,7 +144,7 @@
                             <!--Start Header Row-->
                             <table class="header-table" width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
                                 <tr>
-                                    <td style="background-color: #ff8000; padding-top: 20px; padding-bottom: 20px;" align="center">
+                                    <td style="background-color: #ff8000; padding-top: 20px; padding-bottom: 20px;" align="center"> <!-- Added padding styles to td tag for Outlook compatibility -->
                                         <img src="https://i.imgur.com/nNTQxW0.png" width="150" style="display: block; border: none;" alt="Skip The Dishes Logo">
                                     </td>
                                 </tr>
@@ -213,7 +213,7 @@
                                             <td class ="restaurant-address" style="padding: 0 80px 5px 80px;" colspan="3">
                                                 <p style="font-family:Roboto,HelveticaNeue-Regular,'Helvetica Neue',Helvetica,Arial,sans-serif; font-size: 14px; margin:0; 
                                                  text-align: left;"><span class="order-address"><b>McDonald's (356 Yonge St.)</b></span></p>  
-                                                 <!--[if gte mso 12]><br /> <![endif]-->                                            
+                                                 <!--[if gte mso 12]><br /> <![endif]-->  <!--Gets rid of Horizontal White Lines in Outlook-->
                                             </td>
                                         </tr>
                                         <tr>
@@ -256,7 +256,7 @@
                                             margin:0; padding-bottom: 20px; padding-left: 17px; text-align:left;">                                          
                                                 <table class="bullet-list" cellpadding="0" cellspacing="0" border="0" role="presentation"> <!-- Can't use list tags (li/ol/ul) | Need to create a separate table and use (td/tr) tags-->
                                                     <tr style="font-size: 12px;">
-                                                        <td class="bullet-point" valign="top" style="color: #5e6b77; padding-left: 14px;">&#8226;</td>
+                                                        <td class="bullet-point" valign="top" style="color: #5e6b77; padding-left: 14px;">&#8226;</td> <!-- Unicode for Bullet Point to display properly on all clients -->
                                                         <td style="padding-left: 10px;" valign="top" align="left">  
                                                             <p style="color: #5e6b77; font-size: 12px; margin:0;">
                                                             Spicy Habanero Sauce [110.0 Cals]</p>                                                          
